@@ -61,10 +61,10 @@ console.log(48 === parseInt('48'));
 
 //The farm
 let animal = "cow";
-if(animal === "cow"){
+if (animal === "cow") {
     console.log("mooooo")
 }
-else(console.log("Hey! You're not a cow."))
+else (console.log("Hey! You're not a cow."))
 
 /*
 Driver's Ed
@@ -72,10 +72,10 @@ Make a variable that holds a person's age; be semantic
 Write code that will print out "Here are the keys!", if the age is 16 years or older, or, if the age is younger than 16, a message should print "Sorry, you're too young."
 */
 let age = 18;
-if(age >= 16){
+if (age >= 16) {
     console.log("Here are the keys")
 }
-else if(age<16){
+else if (age < 16) {
     console.log("Sorry, you're too young")
 }
 
@@ -86,13 +86,13 @@ Loops: The basics
 3. Write a loop that will print out every third number starting with 12 and going no higher than 4000
 */
 //console.log() are commented out to avoid printing all the numbers...
-for(i=0;i<11;i++){
+for (i = 0; i < 11; i++) {
     //console.log(i)
 }
-for(i=10;i<=400;i++){
+for (i = 10; i <= 400; i++) {
     //console.log(i)
 }
-for(i=12;i<4000;i+=3){
+for (i = 12; i < 4000; i += 3) {
     //console.log(i)
 }
 
@@ -101,8 +101,8 @@ Get even
 1. Print out the numbers that are within the range of 1 - 100
 2. Adjust your code to add a message next to even numbers only that says: "<-- is an even number"
 */
-for(i=1;i<100;i++){
-    if(i%2===0){
+for (i = 1; i < 100; i++) {
+    if (i % 2 === 0) {
         console.log(`${i} is an even number`)
     }
 }
@@ -113,15 +113,15 @@ Give me Five
 2. Add to the code from above to print out "I found a number. Three is a crowd" if the number is a multiple of three
 3. For numbers divisible by both three and five, be sure your code prints both messages
 */
-for(i=1;i<101;i++){
-    if(i%5===0 && i%3===0){
+for (i = 1; i < 101; i++) {
+    if (i % 5 === 0 && i % 3 === 0) {
         console.log(`I found a ${i}. High five!`)
         console.log(`I found a ${i}. Three is a crowd`)
     }
-    else if(i%5===0){
+    else if (i % 5 === 0) {
         console.log(`I found a ${i}. High five! `)
     }
-    else if(i%3===0){
+    else if (i % 3 === 0) {
         console.log(`I found a ${i}. Three is a crowd`)
     }
 }
@@ -132,17 +132,17 @@ Write code that will save the sum of all the numbers between 1 - 10 to a variabl
 Check your work! Your bank_account should have $55 in it.
 */
 let newNum = 0;
-for(i=1;i<=10;i++){
-    newNum+=i;
+for (i = 1; i <= 10; i++) {
+    newNum += i;
 }
 console.log(newNum);
 /*You got a bonus! Your pay is now doubled each week. Write code that will save the sum of all the numbers between 1 - 100 multiplied by 2.
 Check your work! Your bank_account should have $10,100 in it.
-*/    
+*/
 
-let doublePay=0
-for(i=1;i<101;i++){
-    doublePay +=i*2;
+let doublePay = 0
+for (i = 1; i < 101; i++) {
+    doublePay += i * 2;
 }
 console.log(doublePay);
 
@@ -158,7 +158,7 @@ For example, if there is a line in checkout, the customers are sequenced in who 
 
 //Easy Does It
 //Create an array that contains three quotes and store it in a variable called quotes
-const quotes = ["firstQuote","secondQuote","thirdQuote"];
+const quotes = ["firstQuote", "secondQuote", "thirdQuote"];
 
 //Accessing elements
 let randomThings = [1, 10, "Hello", true];
@@ -174,7 +174,7 @@ const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
 // What would you write to access the 3rd element of the array?
 ourClass[2];
 // Change the value of "Github" to "Octocat"
-ourClass[4]="Octocat"
+ourClass[4] = "Octocat"
 // Add a new element, "Cloud City" to the array
 ourClass.push("Cloud City");
 console.log(ourClass)
@@ -184,7 +184,182 @@ const myArray = [5, 10, 500, 20]
 // Add the string "Aegon"to the end of the array. Add another string of your choice to the end of the array.
 myArray.push("Aegon");
 // Remove the 5 from the beginning of the array.
-myArray.pop(myArray)
+myArray.shift(5);
 // Add the string "Bob Marley"to the beginning of the array.
+myArray.unshift("Bob Marley");
 // Remove the string of your choice from the end of the array.
+myArray.pop();
 // Reverse this array using Array.prototype.reverse(). Did you mutate the array? What does mutate mean? Did the .reverse()method return anything?
+//returned Object(0)[]
+console.log(Array.prototype.reverse(myArray));
+console.log(myArray.reverse());
+//myArray.reverse() returned the array in reverse order
+
+//Biggie Smalls
+// Create a variable that contains an integer.
+let num = 5;
+// Write an if ... elsestatement that:
+// console.log()s "little number" if the number is entered is less than 100
+// console.log()s big number if the number is greater than or equal to 100.
+if (num < 100) {
+    console.log("little number")
+}
+else if (num > 100) {
+    console.log("big number")
+}
+
+//Monkey in the Middle
+// Write an if ... else if ... elsestatement:
+// console.log()little numberif the number entered is less than 5.
+// If the number entered is more than 10, log big number.
+// Otherwise, log "monkey".
+
+let monkeyNum = 90;
+if (monkeyNum < 5) {
+    console.log("little number")
+}
+else if (monkeyNum > 10) {
+    console.log("big number")
+}
+else {
+    console.log("monkey")
+}
+
+//What's in your closet
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "Per Scholas hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+    [
+        // These are Thom's shirts
+        "grey button-up",
+        "dark grey button-up",
+        "light blue button-up",
+        "blue button-up",
+    ], [
+        // These are Thom's pants
+        "grey jeans",
+        "jeans",
+        "PJs"
+    ], [
+        // Thom's accessories
+        "wool mittens",
+        "wool scarf",
+        "raybans"
+    ]
+];
+//1.  What's Kristyn wearing today? Using bracket notation to access items in kristynsCloset, log the sentence "Kristyn is rocking that " + the third item in Kristyn's closet + " today!" to the console.
+console.log(`Kristyn is rocking that ${kristynsCloset[2]} today!`)
+// 2. Kristyn just bought some sweet shades! Add "raybans"to her closet after "yellow knit hat".
+//arr.splice(start,remove,'addItem')
+kristynsCloset.splice(6,0,"raybans")
+console.log(kristynsCloset)
+// 3. Kristyn spilled coffee on her hat... modify this item to read "stained knit hat"instead of yellow.
+kristynsCloset.splice(5,1,"stained knit hat")
+console.log(kristynsCloset)
+// 4. Put together an outfit for Thom! Using bracket notation, access the first element in Thom's shirtsarray.
+console.log(thomsCloset[0][0])
+// 5. In the same way, access one item from Thom's pants array.
+console.log(thomsCloset[1][0])
+// 6. Access one item from Thom's accessories array.
+console.log(thomsCloset[2][0])
+// 7. Log a sentence about what Thom's wearing. Example: "Thom is looking fierce in a grey button-up, jeans and wool scarf!"
+console.log(`Thom is looking fierce in a ${thomsCloset[0][1]}, ${thomsCloset[1][1]} and ${thomsCloset[2][1]}!`)
+// 8. Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to Footie Pajamas.
+thomsCloset[1].splice(2,1,"Footie Pajamas")
+console.log(thomsCloset[1])
+
+//print Greeting
+// Do you think you could write a function called printGreeting with a parameter namethat returns a greeting with the argument interpolated into the greeting?
+const greetings = (sli)=>{
+    console.log(`Hello there, ${sli}`)
+}
+greetings("Slimer")
+
+const printCool = (name) =>{
+    console.log(`${name} is cool`)
+}
+printCool("Captain")
+
+//calculate cube
+// Write a function calculateCubethat takes a single number and prints the volume of a cube made from that number.
+const caluclateCube = (num) =>{
+    console.log(num**3)
+}
+caluclateCube(5);
+
+//isVowel
+// Write a function isVowelthat takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case. Test your function on every vowel and make sure it's working. In general, when you write functions, take a minute to test them with different values to make sure they behave the way you want.
+let str = "a"
+let isVow = false
+switch (str.toLowerCase()) {
+    case 'o':
+        isVow = true;
+    case 'e':
+        isVow = true;
+    case 'i':
+        isVow = true;
+    case 'u':
+        isVow = true;
+    case 'a':
+        isVow = true;
+}
+console.log(isVow)
+
+//getTwoLengths
+// Write a function getTwoLengthsthat accepts two parameters (strings). The function should return an array of numbers where each number is the length of the corresponding string.
+const getTwoLengths=(str1,str2)=>{
+    let arr = []
+    arr.push(str1.length)
+    arr.push(str2.length)
+    console.log(arr)
+}
+getTwoLengths("candy","egg")
+
+//getMultipleLengths
+// Write a function getMultipleLengthsthat accepts a single parameter as an argument: an array of strings. The function should return an array of numbers where each number is the length of the corresponding string.
+const getMultipleLengths= (arr) =>{
+    let lengthArr = []
+    arr.forEach(item=>{
+        lengthArr.push(item.length)
+    })
+    console.log(lengthArr)
+}
+let mulArr = ["coastal","pepsisi","cat"]
+getMultipleLengths(mulArr)
+
+//max of three
+// Define a function maxOfThreethat takes three numbers as arguments and returns the largest of them. If all numbers are the same, it doesn't matter which one is returned. If the two largest numbers are the same, one of them should be returned. Be sure to test it with larger values in each of the three locations
+const maxOfThree =(num1,num2,num3)=>{
+    let lrgNum = num1
+    if(num2>num1){
+        lrgNum = num2;
+    }
+    else if(num3>num1){
+        lrgNum = num3;
+    }
+    console.log(lrgNum);
+}
+maxOfThree(1,4,1)
+
+//printLongestWord
+// Write a function printLongestWord that accepts a single argument, an array of strings. The method should return the longest word in the array. In case of a tie, the method should return the word that appears first in the array.
+const printLongestWord =(arr)=>{
+    let longestStr = ""
+    arr.forEach(item =>{
+        if(item.length>longestStr.length){
+            longestStr= item;
+        }
+    })
+    console.log(longestStr)
+}
+printLongestWord(["cady","canny","dogg"])
+
